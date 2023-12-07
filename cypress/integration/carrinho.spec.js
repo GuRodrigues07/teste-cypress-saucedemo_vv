@@ -17,6 +17,10 @@ describe('Cenário 3: Adição de Produtos ao Carrinho', () => {
             wait()
             cy.get('.btn_inventory').eq(index).should('be.enabled').should('be.visible')
         })
+        wait();
+    cy.get('.shopping_cart_link').click();
     })
+
+    
 
 })
